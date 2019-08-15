@@ -24,7 +24,7 @@ export class Context {
       case 'number':
         return val.toString();
       case 'string':
-        return this.generateVariable(val);
+        return this.generateVariable(val as string);
       case 'function':
         return `(${val}).call(${this.generateVariable()}, vars)`;
     }

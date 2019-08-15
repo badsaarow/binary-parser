@@ -7,7 +7,7 @@ const aliasRegistry: { [key: string]: Parser } = {};
 const FUNCTION_PREFIX = '___parser_';
 const FUNCTION_ENCODE_PREFIX = '___encoder_';
 
-interface ParserOptions {
+export interface ParserOptions {
   length?: number | string | ((item: any) => number);
   assert?: number | string | ((item: number | string) => boolean);
   lengthInBytes?: number | string | ((item: any) => number);
@@ -31,9 +31,9 @@ interface ParserOptions {
   offset?: number | string | ((item: any) => number);
 }
 
-type Types = PrimitiveTypes | ComplexTypes;
+export type Types = PrimitiveTypes | ComplexTypes;
 
-type ComplexTypes =
+export type ComplexTypes =
   | 'bit'
   | 'string'
   | 'buffer'
@@ -45,9 +45,9 @@ type ComplexTypes =
   | 'saveOffset'
   | '';
 
-type Endianess = 'be' | 'le';
+export type Endianess = 'be' | 'le';
 
-type PrimitiveTypes =
+export type PrimitiveTypes =
   | 'uint8'
   | 'uint16le'
   | 'uint16be'
