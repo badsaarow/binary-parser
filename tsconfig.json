@@ -14,8 +14,8 @@
     "noImplicitReturns": true,
     "noFallthroughCasesInSwitch": true,
     "types": ["node"],
-    "esModuleInterop": true,
-    "include": ["src"],
-    "exclude": ["node_modules", "**/__tests__/*"]
+    "esModuleInterop": true
   }
+  "include": ["src"],
+  "exclude": ["node_modules", "**/__tests__/*"]
 }
