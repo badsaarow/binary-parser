@@ -1,5 +1,6 @@
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
+exports.Parser = void 0;
 var buffer_1 = require("buffer");
 var vm_1 = require("vm");
 var context_1 = require("./context");
